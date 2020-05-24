@@ -5,3 +5,26 @@
     <li *ngFor="let trick of combo">{{trick.name}}</li>
 </ul>
 </div>
+<label for="combo_difficulty">Difficulty:</label>
+
+<select name="combo_difficulty" #combo_difficulty>
+  <option value="0">Easy</option>
+  <option value="1">Medium</option>
+  <option value="2">Hard</option>
+</select>
+<br>
+<label for="combo_number_tricks">Combo Length:</label>
+<select name="combo_number_tricks" #combo_number_tricks>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+<br>
+<button (click)="getCombo(combo_difficulty.value,combo_number_tricks.value)">Get new Combo!</button>

@@ -11,14 +11,16 @@ export class ComboListComponent implements OnInit {
   combo = [];
   constructor(private comboService: ComboService) { }
 
-  ngOnInit(): void {
-    this.getCombo();
-  }
+  ngOnInit(): void {}
 
-  getCombo(){
-    this.comboService.getCombo().subscribe(combo => {
+  getCombo(difficulty, numberOfTricks){
+    this.comboService.getCombo(difficulty, numberOfTricks).subscribe(combo => {
       console.log(combo);
       this.combo = combo});
+  }
+
+  test(){
+    console.log('Testbutton');
   }
 
 }
