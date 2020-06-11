@@ -7,14 +7,14 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class ComboService {
-  private comboUrl = 'http://localhost:3000/combo';
   
   constructor(
     private http: HttpClient,
   ) { }
 
   getCombo(difficulty, numberOfTricks) {
-    let url = this.comboUrl + '?difficulty=' + difficulty + '&number=' + numberOfTricks;
+    let ip = window.location.hostname;
+    let url = `http://${ip}:3000/combo` + '?difficulty=' + difficulty + '&number=' + numberOfTricks;
     console.log(url);
     return this.http.get(url).pipe(
         catchError(this.handleError<any>())
