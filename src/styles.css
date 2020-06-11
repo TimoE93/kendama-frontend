@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:none;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1em;
+    box-shadow: 0 4px 1px 0 rgba(0,0,0,0.2);
+    text-align-last: center;
+}
+
+option {
+    text-align: center;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border:none;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1em;
+    box-shadow: 0 4px 1px 0 rgba(0,0,0,0.2);
+}

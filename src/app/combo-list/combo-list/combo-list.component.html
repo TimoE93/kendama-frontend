@@ -1,20 +1,22 @@
-<p>Combo Generator</p>
+<div class="combo_wrapper">
+<h1>Kendama Combo</h1>
 
-<div *ngIf="combo">
+<div *ngIf="combo" class="pd-15">
 <ul>
     <li *ngFor="let trick of combo">{{trick.name}}</li>
 </ul>
 </div>
-<label for="combo_difficulty">Difficulty:</label>
-
+<div class="pdbottom-15">
 <select name="combo_difficulty" #combo_difficulty>
+  <option value="0">Select Difficulty</option>
   <option value="0">Easy</option>
   <option value="1">Medium</option>
   <option value="2">Hard</option>
 </select>
-<br>
-<label for="combo_number_tricks">Combo Length:</label>
+</div>
+<div class="pdbottom-15">
 <select name="combo_number_tricks" #combo_number_tricks>
+    <option value="1">Combo Length</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -26,5 +28,6 @@
     <option value="9">9</option>
     <option value="10">10</option>
   </select>
-<br>
+</div>
 <button (click)="getCombo(combo_difficulty.value,combo_number_tricks.value)">Get new Combo!</button>
+</div>

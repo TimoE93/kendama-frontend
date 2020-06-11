@@ -1,0 +1,22 @@
+.combo_wrapper{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+.pdbottom-15 {
+    padding-bottom: 15px;
+}
