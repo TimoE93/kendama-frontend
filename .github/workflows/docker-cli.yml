@@ -19,6 +19,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -t kendama_image:latest . 
     - name: Tag the Dockerimage
-      run: docker tag kendama_image kirb/kbf:latest
+      run: docker tag kendama_image kirb/kfe:latest
     - name: Push the Image
-      run: docker push kirb/kbf:latest
+      run: docker push kirb/kfe:latest
