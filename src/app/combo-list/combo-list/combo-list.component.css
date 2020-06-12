@@ -4,6 +4,7 @@
     overflow: auto;
     padding: 0 20px;
     text-align: center;
+    display: inline-block;
 }
 
 li{
