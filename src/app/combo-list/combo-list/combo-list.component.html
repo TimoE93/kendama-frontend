@@ -1,6 +1,6 @@
-<div class="combo_wrapper">
+<div class="combo_wrapper height-auto">
 
-<div *ngIf="combo" class="pd-15">
+<div *ngIf="combo">
 <ul>
     <li *ngFor="let trick of combo">{{trick.name}}</li>
 </ul>
@@ -28,5 +28,6 @@
     <option value="10">10</option>
   </select>
 </div>
-<button (click)="getCombo(combo_difficulty.value,combo_number_tricks.value)">Get new Combo!</button>
+<div class="pdbottom-15"><button (click)="getCombo(combo_difficulty.value,combo_number_tricks.value)">Get new Combo!</button></div>
+
 </div>

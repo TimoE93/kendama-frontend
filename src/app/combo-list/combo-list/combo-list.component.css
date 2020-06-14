@@ -1,17 +1,7 @@
-.combo_wrapper{
-    margin: auto;
-    max-width: 1100px;
-    overflow: auto;
-    padding: 0 20px;
-    text-align: center;
-    display: inline-block;
-}
-
 li{
     list-style: none;
     padding: 5px;
-    color: whitesmoke;
-    font-weight: 300;
+    color:#333;
 }
 
 .pd-15 {
